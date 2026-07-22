@@ -1,8 +1,8 @@
 # Configuration spécifique pour la production
-replicaCount: 3 # On veut de la haute disponibilité en prod
+replicaCount: 2 # On veut de la haute disponibilité en prod
 
 image:
-  tag: "latest" # On force la dernière version en prod
+  tag: "alpine" # On force la dernière version en prod
 
 service:
   type: NodePort # On l'expose pour pouvoir y accéder depuis Minikube
